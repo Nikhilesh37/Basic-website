@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3-Container Website</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels - Explore the World</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">Wanderlust</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="header">
-    <h1>Welcome to My Website</h1>
-  </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>From beaches to mountains, we've got you covered.</p>
+            <button class="cta">Book Now</button>
+        </div>
+    </section>
 
-  <div class="main">
-    <p>This is the main content area. Add your text, images, or features here.</p>
-  </div>
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="C:\Website 2\Images\ben-o-bro-wpU4veNGnHg-unsplash.jpg" alt="Sunny Beach"><p> Uraban Adventure</p></div>
+                <div class="slide"><img src="C:\Website 2\Images\neom-207NEuFvjlg-unsplash.jpg" alt="Majestic Mountains"><p> Mountain Escape</p></div>
+                <div class="slide"><img src="C:\Website 2\Images\sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="Vibrant City"><p> Tropical Beach</p></div>
+            </div>
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+        </div>
+    </section>
 
-  <div class="footer">
-    <p>&copy; 2025 My Website | All rights reserved.</p>
-  </div>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are passionate travelers dedicated to curating unforgettable experiences. Join us on journeys that inspire and rejuvenate.</p>
+    </section>
 
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Wanderlust Travels. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
